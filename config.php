@@ -12,7 +12,7 @@
 
 
 $config = array(
-	'site' => "https://114514.cn",  //短网址域名
+	'site' => "https://d2l.uk-linux.cnidc.co",  //短网址域名
 	//不允许缩短的域名，单个匹配，*表示所有的二级域名
 	'key' => "145170dif",                             //token 使用的密钥
 

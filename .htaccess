@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteBase /st/
+RewriteRule ^([a-z]*)$ ^create.php?id=$1 [L]
+RewriteRule ^([A-Z]*)$ ^create.php?id=$1 [L]
+RewriteRule ^([0-9]*)$ ^create.php?id=$1 [L]

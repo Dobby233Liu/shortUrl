@@ -10,7 +10,7 @@
 
 error_reporting(E_ALL ^ E_NOTICE);//显示除去 E_NOTICE 之外的所有错误信息
 $config = array(
-	'site' => "https://d2l.uk-linux.cnidc.co",  //短网址域名
+	'site' => "https://d2l.uk-linux.cnidc.co/st/",  //短网址域名
 	//不允许缩短的域名，单个匹配，*表示所有的二级域名
 	'key' => "145170dif",                             //token 使用的密钥
 

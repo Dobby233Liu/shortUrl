@@ -42,7 +42,7 @@ function checkId($arr,$id){
 
 $saveFile = 'urls.php';
 
-$keyshit = trim($_POST["sig"]);
+$keyshit = $_POST["sig"];
 // 检查本地文件是否可读写
 if (!is_writable($saveFile) || !is_readable($saveFile)) {
     die('chmod 777 urls.php');
@@ -97,6 +97,6 @@ if ($id) {
     $shortUrl = ($config['use_rewrite'] == 1) ? "{$config['site']}/{$id}" : "{$config['site']}/create.php?id={$id}";
     echo $message;
     echo "<img src='genqr.php?c=".$shortUrl."'><br>";
-    echo "url: <a href='".$shortUrl."'>".$shorturl."</a>";
+    echo "url: <a href='".$shortUrl."'>".$shortUrl."</a>";
     exit();
 }

@@ -9,7 +9,15 @@
 
 
 error_reporting(E_ALL ^ E_NOTICE);//显示除去 E_NOTICE 之外的所有错误信息
-require "config.php";
+$config = array(
+	'site' => "https://d2l.uk-linux.cnidc.co",  //短网址域名
+	//不允许缩短的域名，单个匹配，*表示所有的二级域名
+	'key' => "145170dif",                             //token 使用的密钥
+
+	//根据需求修改
+	'use_rewrite' => 1
+);
+
 //生成大小写字母和数字随机字符串
 function createId($len){
     //大小写字母和数字混用

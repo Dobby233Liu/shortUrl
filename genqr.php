@@ -3319,5 +3319,4 @@ if(isset($_GET['c'])){
 QRcode::png($_GET['c'],null,0,6,2);
 }else{
 header("HTTP/1.1 400 Bad Request")
-echo '';
 }

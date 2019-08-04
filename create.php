@@ -10,9 +10,7 @@
 
 error_reporting(E_ALL ^ E_NOTICE);//显示除去 E_NOTICE 之外的所有错误信息
 $config = array(
-	'site' => "https://d2l.uk-linux.cnidc.co/st",  //短网址域名
-	//不允许缩短的域名，单个匹配，*表示所有的二级域名
-	'key' => "145170dif",                             //token 使用的密钥
+	'site' => "https://d2lst.ml",  //短网址域名
 
 	//根据需求修改
 	'use_rewrite' => 1
@@ -70,7 +68,7 @@ if ($id) {
         exit();
     }
     //判断是否正则为正确的网址
-    $regex = "/^(https?:\/\/)([\w-]+\.)+[\w-]+(\/[\w-.\/?%&=#]*)?$/i";
+    $regex = "/^(https?:\/\/)([\w\-]+\.)+[\w\-]+(\/[\w\-.\/?%&=#]*)?$/i";
     if (!preg_match($regex, $url)) {
         $message = 'bad url';
         echo $message;
